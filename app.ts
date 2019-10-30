@@ -26,28 +26,28 @@ app.config([
         url: "/ejemplos",
         templateUrl: "views/ejemplos.html"        
       })
-      .state("es6.ejemplos.arrays", { 
+      .state("es6.arrays", { 
         url: "^/arrays",
         templateUrl: "views/ejemplos/arrays.html"        
       })
       .state("es6.clases", { 
-        url: "/clases",
+        url: "^/clases",
         templateUrl: "views/ejemplos/clases.html"        
       })
       .state("es6.filtros", { 
-        url: "/filtros",
+        url: "^/filtros",
         templateUrl: "views/ejemplos/filtros.html"        
       })
       .state("es6.arrow", { 
-        url: "/arrow",
+        url: "^/arrow",
         templateUrl: "views/ejemplos/arrow.html"        
       })
       .state("es6.promesas", { 
-        url: "/promesas",
+        url: "^/promesas",
         templateUrl: "views/ejemplos/promesas.html"        
       })
       .state("es6.variables", { 
-        url: "/variables",
+        url: "^/variables",
         templateUrl: "views/ejemplos/variables.html"        
       })
       .state("es6.leeme", { 
