@@ -1,0 +1,36 @@
+<h2>Promesas</h2>
+<hr>
+
+<p>Una promesa en JavaScript es exactamente lo que parece: se usa para hacer una promesa de hacer algo, generalmente de forma asíncrona. Cuando finaliza la tarea, cumple su promesa o no lo hace.</p>
+
+<p><code>Promise</code> es una función constructora, por lo que debe usar la palabra clave <code>new</code> para crear una.</p>
+<p>Toma una función, como argumento, con dos parámetros: <code>resolve</code> y <code>reject</code>. Estos métodos son utilizados para determinar el resultado de la promesa. La sintaxis se ve así:</p>
+
+<div class="border">
+    <pre><code>
+        const myPromise = new Promise((resolve, reject) => {
+
+        });
+    </code></pre>
+</div>
+
+<p>Una promesa tiene tres estados: <code>pending</code>, <code>fulfilled</code> y <code>rejected</code>.</p>
+<ul>
+    <li><strong>pending</strong>: la promesa que creamos en el ejemplo anterior, está atrapada para siempre en el estado <code>pending</code> porque no se agregó una forma de completar la promesa.</li>
+    <li><strong>fulfilled</strong>: se usa cuando quiere que su promesa tenga éxito.</li>
+    <li><strong>rejected</strong>: se usa cuando quiere que su promesa falle.</li>
+</ul>
+<p>Estos son métodos que toman un argumento, como se ve a continuación.</p>
+
+<div class="border">
+        <pre><code>
+            const myPromise = new Promise((resolve, reject) => {
+                if(condition here) {
+                    resolve("Promise was fulfilled");
+                } else {
+                    reject("Promise was rejected");
+                }
+        </code></pre>
+    </div>
+ 
+

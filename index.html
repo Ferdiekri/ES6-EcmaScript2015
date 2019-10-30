@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="es" ng-app="myApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ES6</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="//unpkg.com/@uirouter/visualizer@4"></script>
+
+    <!-- modelo -->
+    <script src="model/piloto.js"></script>
+
+    <!-- controladores -->
+    <script src="controllers/inicioController.js"></script>
+
+    <!-- app principal -->
+    <script src="app.js"></script>
+  </head>
+
+  <body class="container" ng-strict-di ng-cloak>
+
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#!/es6/ejemplos">Ejemplos</a>
+      <a href="#!/es6/leeme">Leeme</a>
+    </nav>
+
+    <div ui-view></div>
+	
+  </body>
+</html>

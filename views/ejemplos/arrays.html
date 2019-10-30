@@ -1,0 +1,25 @@
+<h2>Arrays</h2>
+<hr>
+
+<p>El objeto <pre>Array</pre> de JavaScript es un objeto global que es usado en la construcción de arrays, que son objetos tipo lista de alto nivel.</p>
+
+<p>Si hemos definido una <pre>Array</pre> como constante (<pre>const</pre>), para poder cambiar sus valores, deberemos hacerlo por cada campo individualmente:</p>
+
+<div class="border">
+  <pre><code>
+    const array = [5, 7, 2];
+    function cambiarValores() {
+      'use strict';
+    
+      // array = [2, 5, 7]; <- esto no es posible
+
+      // hay que hacer lo siguiente:
+      array[0]=2;
+      array[1]=5;
+      array[2]=7;    
+    }
+  </code></pre>
+</div>
+
+<p></p>
+
