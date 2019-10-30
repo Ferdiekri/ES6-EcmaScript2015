@@ -26,7 +26,7 @@ app.config([
         url: "/ejemplos",
         templateUrl: "views/ejemplos.html"        
       })
-      .state("es6.ejemplos.variables", { 
+      .state("es6.variables", { 
         url: "/variables",
         templateUrl: "views/ejemplos/variables.html"        
       })
