@@ -26,17 +26,17 @@ app.config([
         url: "/ejemplos",
         templateUrl: "views/ejemplos.html"        
       })
-      .state("es6.variables", { 
-        url: "/variables",
-        templateUrl: "views/ejemplos/variables.html"        
-      })
-      .state("es6.arrays", { 
-        url: "/arrays",
+      .state("es6.ejemplos.arrays", { 
+        url: "^/arrays",
         templateUrl: "views/ejemplos/arrays.html"        
       })
       .state("es6.clases", { 
         url: "/clases",
         templateUrl: "views/ejemplos/clases.html"        
+      })
+      .state("es6.filtros", { 
+        url: "/filtros",
+        templateUrl: "views/ejemplos/filtros.html"        
       })
       .state("es6.arrow", { 
         url: "/arrow",
@@ -46,9 +46,9 @@ app.config([
         url: "/promesas",
         templateUrl: "views/ejemplos/promesas.html"        
       })
-      .state("es6.filtros", { 
-        url: "/filtros",
-        templateUrl: "views/ejemplos/filtros.html"        
+      .state("es6.variables", { 
+        url: "/variables",
+        templateUrl: "views/ejemplos/variables.html"        
       })
       .state("es6.leeme", { 
         url: "/leeme",
